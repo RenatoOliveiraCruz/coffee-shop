@@ -9,13 +9,13 @@
     font-family: "Poppins",sans-serif;
 }
 
-:root {
+:root{
     --bg-color: #000;
     --text-color: #fff;
     --main-color: #e4b381;
 }
 
-html {
+html{
     font-size: 62,5%;
     overflow-x: hidden;
 }
@@ -39,7 +39,7 @@ body{
     z-index: 100;
 }
 
-.logo {
+.logo{
     font-size: 3rem;
     color: var(--text-color);
     font-weight: 800;
@@ -51,7 +51,7 @@ body{
     transform: scale(1.1);
 }
 
-span {
+span{
     color: var(--main-color);
 }
 
@@ -65,13 +65,68 @@ span {
 }
 
 .navbar a:hover,
-.navbar a.active {
+.navbar a.active{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
 
-#menu-icon {
+#menu-icon{
     font-size: 3.6rem;
     color: var(--main-color);
-    display: none
+    display: none;
 }
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 10rem;
+}
+
+.home{
+    display: flex;
+    justify-content: right;
+    text-align: left;
+    align-items: center;
+    gap: 8rem;
+    background: url(background.jpg)center no-repeat;
+    background-size: cover;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h1{
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    max-width: 750px;
+    margin: 3rem 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: white;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    background: var(--bg-color);
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
